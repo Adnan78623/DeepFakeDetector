@@ -1,54 +1,47 @@
 body {
-    background: #000;
+    background: rgb(0, 0, 0);
 }
 
-.navbar-light .navbar-brand {
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 500px;
+    /* Footer height */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.navbar {
+    background-color: black;
+}
+
+.nav-link-1 {
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.nav-link-2 {
     color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-}
-
-.navbar-toggler {
-    background: #fff;
-}
-
-.navbar-nav {
-    text-align: center;
-}
-
-.nav-link {
-    padding: .2rem 1rem;
-}
-
-.nav-link.active,
-.nav-link:focus {
-    color: #fff;
-}
-
-.navbar-toggler {
-    padding: 1px 5px;
-    font-size: 18px;
-    line-height: 0.3;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #fff;
+.nav-link-1:hover, .nav-link-2:hover{
+    color: #dc3545;
 }
 
 .nav-item {
-    padding-right: 20px;
+    color: black;
 }
