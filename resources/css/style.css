@@ -16,32 +16,30 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    
+
 }
 
 .navbar {
     background-color: black;
 }
 
-.nav-link-1 {
-    color: #fff;
-    font-size: 35px;
-    text-transform: uppercase;
+.navbar-brand {
+    font-size: 30px;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-decoration: none;
+    color: white;
 }
 
-.nav-link-2 {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 30px;
+.nav-link {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
 }
 
-.nav-link-1:hover, .nav-link-2:hover{
+.nav-link:hover, .navbar-brand:hover {
     color: #dc3545;
 }
 
-.nav-item {
-    color: black;
+.navbar-dark {
+    font-weight: bold;
+    color: white;
 }
