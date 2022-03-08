@@ -16,10 +16,16 @@ use App\Http\Controllers\ScannerController;
 |
 */
 
-// Main Application Pages //
 // Route::get('/', function () {
-//     return view('home');
+//     return view('welcome');
 // });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__ . '/auth.php';
+
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contactus', [ContactusController::class, 'index'])->name('contactus');

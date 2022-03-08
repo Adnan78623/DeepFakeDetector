@@ -18,7 +18,7 @@
     <br><br><br><br><br><br><br><br>
     <div class="row">
         <div class="col-xl-6">
-            <img src="resources/gifs/obama-deepfake-max-amini.webp" class="rounded img-fluid" alt="Obama Deep Fake.">
+            <img src="{{asset('assets/gifs/obama-deepfake-max-amini.webp')}}" class="rounded img-fluid" alt="Obama Deep Fake.">
             <br><br><br><br>
         </div>
         <div class="col"></div>

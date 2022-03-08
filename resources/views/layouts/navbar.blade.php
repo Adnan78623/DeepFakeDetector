@@ -22,6 +22,22 @@
                             <li class="nav-item">
                                 <a class=" nav-link" href="{{ route('contactus') }}">Contact Us</a>
                             </li>
+                            @if (Route::has('login'))
+                            <li class="nav-item">
+                                @auth
+                                <a class=" nav-link" href="{{ route('dashboard') }}">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                @else
+                                <a class=" nav-link" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                @if (Route::has('register'))
+                                <a class=" nav-link" href="{{ route('register') }}">Register</a>
+                                @endif
+                                @endauth
+                            </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
